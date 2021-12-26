@@ -4,7 +4,8 @@ title: "Robzhou Math Note"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles:
+  ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 footnotereturnlinkcontents: "↩"
 
 permalinks:
@@ -30,7 +31,7 @@ menu:
 
 params:
   description: "记录学习物理和数学笔记的网站"
-  footer: "[周子豪]"
+  footer: "[周子豪](https://github.com/zzhgithub)(zzhggmm@gmail.com)"
 
 markup:
   highlight:
