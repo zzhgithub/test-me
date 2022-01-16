@@ -24,9 +24,9 @@ $$ e^x = \sum\_{n=0}^{\infty}\frac{x^n}{n!} $$
 
 注意一下原来的形式。在回忆一下 e 的基本定义，会发现：一个外部的 x 次方移动到了里面去了。如下：
 
-$$ e^x = \bbox[yellow]{\left(\lim*{n\to\infty}(1+\frac{1}{n})^n\right)^{x} = \lim*{n\to\infty}(1+\frac{x}{n})^n} 【公式一】$$
+$$ e^x = \bbox[yellow]{\left(\lim_{n\to\infty}(1+\frac{1}{n})^n\right)^{x} = \lim_{n\to\infty}(1+\frac{x}{n})^n} 【公式一】$$
 
-$$ e^x =\bbox[yellow]{\left(\sum*{n=0}^{\infty}\frac{1}{n!}\right)^{x} =\sum*{n=0}^{\infty}\frac{x^n}{n!}}【公式二】$$
+$$ e^x =\bbox[yellow]{\left(\sum_{n=0}^{\infty}\frac{1}{n!}\right)^{x} =\sum_{n=0}^{\infty}\frac{x^n}{n!}}【公式二】$$
 
 (这里的公式一二指黄色的部分)
 
@@ -36,7 +36,7 @@ $$ e^x =\bbox[yellow]{\left(\sum*{n=0}^{\infty}\frac{1}{n!}\right)^{x} =\sum*{n=
 
 首先我们先来证明一个简单：
 
-$$ \lim*{n\to\infty}(1+\frac{x}{n})^n = \sum*{n=0}^{\infty}\frac{x^n}{n!} $$
+$$ \lim_{n\to\infty}(1+\frac{x}{n})^n = \sum_{n=0}^{\infty}\frac{x^n}{n!} $$
 
 这个形式的证明太简单，这里我不证明了。因为步骤和上一章的证明方法是一样的。无非把其中一个 1 换成 x 而已。
 
@@ -48,7 +48,7 @@ $$ \lim*{n\to\infty}(1+\frac{x}{n})^n = \sum*{n=0}^{\infty}\frac{x^n}{n!} $$
 
 我们先回到最基本的定义上。指数函数表示连续的 x 个 e 相乘。那么先来证明个最简单的 x=2 的情况看看能不能受到启发呢！我们写出我们要证的公式，先观察一下。
 
-$$ \sum*{n=0}^{\infty}\frac{1}{n!}\times\sum*{n=0}^{\infty}\frac{1}{n!} = \sum\_{n=0}^{\infty}\frac{2^n}{n!} $$
+$$ \sum_{n=0}^{\infty}\frac{1}{n!}\times\sum_{n=0}^{\infty}\frac{1}{n!} = \sum_{n=0}^{\infty}\frac{2^n}{n!} $$
 
 到此为止，我毫无头绪。之所以我还有勇气继续进行推导，完全是因为我事先就知道这个公式是正确的。那怎么继续呢？要大胆猜测！左边是两个 n 项多项式相乘，右边也是个 n 项多项式，那么也就是说，在左边展开的结果进行一系列的**重新组合**后，又变成了 n 项，并且得到右侧的形式。
 

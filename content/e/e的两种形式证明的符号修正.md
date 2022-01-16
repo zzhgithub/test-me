@@ -50,14 +50,14 @@ $$ \frac{n(n-1)...(n-i-1)}{n...n}=1(1-\frac{1}{n})...(1-\frac{i-1}{n}) $$
 
 考虑其形式可以简化为
 
-$$ \sum_{j=0}^{i}(1-\frac{j-1}{n}) $$
+$$ \prod_{j=0}^{i}(1-\frac{j-1}{n}) $$
 
 于是原式为：
 
-$$ \lim_{n\to\infty}\sum_{i=0}^{n} \frac{1}{i!} \left[\sum_{j=0}^{i}(1-\frac{j-1}{n}) \right]$$
+$$ \lim_{n\to\infty}\sum_{i=0}^{n} \frac{1}{i!} \left[\prod_{j=0}^{i}(1-\frac{j-1}{n}) \right]$$
 
 在内部对应n来说j是常量。于是可以得到
-$$\lim_{n\to\infty}\left[\sum_{j=0}^{i}(1-\frac{j-1}{n}) \right]=1$$
+$$\lim_{n\to\infty}\left[\prod_{j=0}^{i}(1-\frac{j-1}{n}) \right]=1$$
 
 于是原式化为
 
